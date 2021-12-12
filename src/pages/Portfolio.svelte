@@ -1,8 +1,4 @@
 <script>
-  // import Resume from 'assets/resume.pdf';
-  // import GithubLogo from 'assets/github.png';
-  // import LinkedInLogo from 'assets/linkedin.png';
-  // import FacebookLogo from 'assets/facebook.png';
   import Card from 'partials/Card.svelte';
 
   const scriptsAndApis = {
@@ -48,7 +44,7 @@
         <img
           class="rounded-full w-8 opacity-60 hover:opacity-80 transition"
           alt="Github"
-          src={''} />
+          src="assets/github.png" />
       </a>
       <a
         target="_blank"
@@ -58,25 +54,22 @@
         <img
           class="rounded-full w-8 opacity-60 hover:opacity-80 transition"
           alt="LinkedIn"
-          src={''} />
-      </a>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.facebook.com/profile.php?id=100009446198128"
-        class="rounded-full mr-2">
-        <img
-          class="rounded-full w-8 opacity-60 hover:opacity-80 transition"
-          alt="Facebook"
-          src={''} />
+          src="assets/linkedin.png" />
       </a>
     </div>
     <a
       target="_blank"
       rel="noreferrer"
-      href={''}
-      class="py-1 px-6 ml-4 border border-black rounded-sm hover:bg-gray-100 transition">
+      href="/assets/2021-resume.pdf"
+      class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
       Resume
+    </a>
+    <a
+      target="_blank"
+      rel="noreferrer"
+      href="https://medium.com/@bryantbrock"
+      class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
+      Blog
     </a>
   </div>
   <div class="mt-10">

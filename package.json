@@ -13,7 +13,6 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-replace": "^3.0.0",
-    "airtable": "^0.11.1",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "postcss-load-config": "^3.0.1",
@@ -27,8 +26,6 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0",
-    "svelte-awesome": "^2.3.2",
-    "uuid": "^8.3.2"
+    "sirv-cli": "^1.0.0"
   }
 }

@@ -3,7 +3,6 @@
   import FullStackApps from 'pages/FullStackApps.svelte';
   import ScriptsAndApis from 'pages/ScriptsAndApis.svelte';
   import Portfolio from 'pages/Portfolio.svelte';
-  import Header from 'partials/Header.svelte';
   import Footer from 'partials/Footer.svelte';
   import Sidebar from 'partials/Sidebar.svelte';
   import Tailwind from 'partials/Tailwind.svelte';
@@ -12,7 +11,7 @@
   const pages = [
     {page: 'dev-ops', Component: DevOps},
     {page: 'full-stack-apps', Component: FullStackApps},
-    {page: 'scrips-and-apis', Component: ScriptsAndApis},
+    {page: 'scripts-and-apis', Component: ScriptsAndApis},
   ];
 
   const params = getUrlParams();
@@ -31,18 +30,17 @@
 
   <!-- Static views -->
   <div class="max-w-screen-lg mx-auto">
-    <Header />
-      <div class="flex">
-        <Sidebar />
-        {#if isHome}
-          <Portfolio />
+    <div class="flex">
+      <Sidebar />
+      {#if isHome}
+        <Portfolio />
+      {/if}
+      {#each pages as {page, Component}}
+        {#if page === params.page}
+          <Component />
         {/if}
-        {#each pages as {page, Component}}
-          {#if page === params.page}
-            <Component />
-          {/if}
-        {/each}
-      </div>
+      {/each}
+    </div>
     <Footer />
   </div>
 

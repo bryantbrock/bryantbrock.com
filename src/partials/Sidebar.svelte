@@ -12,9 +12,9 @@
 </script>
 
 <div class="ml-6 my-6 pr-12 border-r border-gray-400">
-  <img src={''} alt="headshot" class="rounded-sm h-64" />
+  <img src="assets/headshot.jpg" alt="headshot" class="rounded h-64" />
   <div class="mt-6">
-    <h2>Bryant Brock</h2>
+    <h2 class="font-bold text-xl">Bryant Brock</h2>
     <span class="text-gray-500 -mt-1">
       Software Engineer
     </span>
@@ -25,11 +25,14 @@
     <p>bryanteebrock@gmail.com</p>
   </div>
   <div class="mt-6">
-    <p>B.A. from New Saint Andrews College</p>
-    <p>3+ years of experience</p>
+    <h3 class="mb-1 font-bold text-lg">Education & Experience</h3>
+    <ul>
+      <li>B.A. from New Saint Andrews</li>
+      <li>3+ years of experience</li>
+    </ul>
   </div>
   <div class="mt-8">
-    <h3>Top Skills</h3>
+    <h3 class="mb-1 font-bold text-lg">Top Skills</h3>
     <div>
       {#each skills as {name, pct}}
       <div class="flex flex-col mt-4 w-56">
