@@ -75,7 +75,7 @@
   ];
 </script>
 
-<div class="w-full my-6 ml-12">
+<div class="mr-6 my-6 pl-12">
   <div>
     <a href="/" class="font-bold">{'< '} <span class="ml-1">Home</span></a>
   </div>

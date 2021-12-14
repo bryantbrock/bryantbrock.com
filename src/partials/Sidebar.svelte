@@ -11,7 +11,7 @@
   ];
 </script>
 
-<div class="ml-6 my-6 pr-12 border-r border-gray-400">
+<div id="sidebar" class="ml-6 my-6 pr-6 mr-6 border-r border-gray-400">
   <img src="assets/headshot.jpg" alt="headshot" class="rounded h-64" />
   <div class="mt-6">
     <h2 class="font-bold text-xl">Bryant Brock</h2>
@@ -21,7 +21,7 @@
   </div>
   <div class="mt-6">
     <p>Moscow, ID</p>
-    <p>(770)820-8961</p>
+    <p>(770) 820-8961</p>
     <p>bryanteebrock@gmail.com</p>
   </div>
   <div class="mt-6">
@@ -58,5 +58,11 @@
   progress::-webkit-progress-value {
     background-color: #333333;
     border-radius: 3px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #sidebar {
+      display: none;
+    }
   }
 </style>

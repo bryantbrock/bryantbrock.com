@@ -32,7 +32,7 @@
   };
 </script>
 
-<div class="mr-6 my-6 pl-12">
+<div class="max-w-2xl mx-auto p-6">
   <h1 class="text-3xl font-bold">Full Stack Software Engineer</h1>
   <div class="flex mt-4">
     <div class="flex">
