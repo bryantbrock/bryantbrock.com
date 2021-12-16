@@ -69,7 +69,7 @@
 
   const techStackRows = ['Client', 'Middleware', 'Database', 'Deployment'];
   const techStacks = [
-    ['React.js', 'Node.js w/ Express', 'MySQL / DynamoDB', 'Heroku / Serverless / AWS'],
+    ['React.js', 'Node.js', 'DynamoDB', 'Heroku / Serverless / AWS'],
     ['Svelte.js', 'Flask', 'MongoDB', 'Serverless / AWS'],
     ['Django', '-', 'PostgreSQL', 'Heroku / AWS'],
   ];

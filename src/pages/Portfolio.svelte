@@ -69,7 +69,7 @@
         target="_blank"
         rel="noreferrer"
         href="https://medium.com/@bryantbrock"
-        class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
+        class="py-1 px-6 mb-1 ml-4 border border-black rounded hover:bg-gray-100 transition">
         Blog
       </a>
     </div>

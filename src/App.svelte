@@ -37,44 +37,45 @@
 </script>
 
 <Tailwind />
-
 <svelte:window bind:outerWidth />
 
-<div
-  on:click={toggleSidebarOpen}
-  class={`
-    flex md:hidden cursor-pointer absolute
-    ${sidebarOpen ? 'left-8' : 'right-8'} top-8 w-5 h-5
-  `}>
-  {#if !sidebarOpen}
-  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-  </svg>
-  {/if}
-</div>
-
-<Sidebar show={sidebarOpen} toggleShow={toggleSidebarOpen}>
-  {#if sidebarOpen}
-    <About forceOpen={true} />
-  {/if}
-</Sidebar>
-
-<div class="bg-gray-50 min-h-screen base">
-
-  <!-- Static views -->
-  <div class="max-w-screen-lg mx-auto">
-    <div class="flex">
-      <About />
-      {#if isHome}
-        <Portfolio />
-      {/if}
-      {#each pages as {page, Component}}
-        {#if page === params.page}
-          <Component />
-        {/if}
-      {/each}
-    </div>
-    <Footer />
+<body class={sidebarOpen ? 'fixed' : ''}>
+  <div
+    on:click={toggleSidebarOpen}
+    class={`
+      flex md:hidden cursor-pointer absolute
+      ${sidebarOpen ? 'left-8' : 'right-8'} top-8 w-5 h-5
+    `}>
+    {#if !sidebarOpen}
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+    </svg>
+    {/if}
   </div>
 
-</div>
+  <Sidebar show={sidebarOpen} toggleShow={toggleSidebarOpen}>
+    {#if sidebarOpen}
+      <About forceOpen={true} />
+    {/if}
+  </Sidebar>
+
+  <div class="bg-gray-50 min-h-screen base">
+
+    <!-- Static views -->
+    <div class="max-w-screen-lg mx-auto">
+      <div class="flex">
+        <About />
+        {#if isHome}
+          <Portfolio />
+        {/if}
+        {#each pages as {page, Component}}
+          {#if page === params.page}
+            <Component />
+          {/if}
+        {/each}
+      </div>
+      <Footer />
+    </div>
+
+  </div>
+</body>
