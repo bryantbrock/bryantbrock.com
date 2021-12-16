@@ -30,7 +30,7 @@
   ];
 </script>
 
-<div class="mr-6 my-6 pl-12">
+<div class="p-6">
   <div>
     <a href="/" class="font-bold">{'< '} <span class="ml-1">Home</span></a>
   </div>

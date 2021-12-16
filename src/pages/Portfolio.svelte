@@ -32,8 +32,8 @@
   };
 </script>
 
-<div class="max-w-2xl mx-auto p-6">
-  <h1 class="text-3xl font-bold">Full Stack Software Engineer</h1>
+<div class="p-6">
+  <h1 class="text-3xl font-bold mr-16">Full Stack Software Engineer</h1>
   <div class="flex mt-4">
     <div class="flex">
       <a
@@ -57,27 +57,27 @@
           src="assets/linkedin.png" />
       </a>
     </div>
-    <a
-      target="_blank"
-      rel="noreferrer"
-      href="/assets/2021-resume.pdf"
-      class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
-      Resume
-    </a>
-    <a
-      target="_blank"
-      rel="noreferrer"
-      href="https://medium.com/@bryantbrock"
-      class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
-      Blog
-    </a>
+    <div class="flex flex-wrap">
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="/assets/2021-resume.pdf"
+        class="py-1 mb-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
+        Resume
+      </a>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://medium.com/@bryantbrock"
+        class="py-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
+        Blog
+      </a>
+    </div>
   </div>
   <div class="mt-10">
-    <div class="flex my-2">
-      <div class="mr-2">
-        <Card {...fullStackApps} />
-      </div>
-      <Card {...devOps} />
+    <div class="flex flex-wrap md:flex-nowrap">
+      <Card {...fullStackApps} classes="mr-0 mb-2 md:mr-2" />
+      <Card {...devOps} classes="mb-2" />
     </div>
     <div>
       <Card {...scriptsAndApis} />
@@ -108,3 +108,9 @@
     </p>
   </div>
 </div>
+
+<style lang="scss">
+  #card {
+
+  }
+</style>
