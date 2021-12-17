@@ -39,7 +39,7 @@
 <Tailwind />
 <svelte:window bind:outerWidth />
 
-<body class={sidebarOpen ? 'fixed' : ''}>
+<body class={sidebarOpen ? 'fixed md:relative' : ''}>
   <div
     on:click={toggleSidebarOpen}
     class={`

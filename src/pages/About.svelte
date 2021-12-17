@@ -1,4 +1,6 @@
 <script>
+  import Image from 'partials/image/Image.svelte';
+
   export let forceOpen = false;
 
   const skills = [
@@ -14,7 +16,9 @@
 </script>
 
 <div class={`ml-6 mr-6 my-6 md:pr-10 md:border-r md:border-gray-400 ${forceOpen ? 'flex-col' : 'hidden'} md:block`}>
-  <img src="assets/headshot.jpg" alt="headshot" class={`${forceOpen ? 'h-36' : 'h-64'} rounded`} />
+  <div>
+    <Image src="assets/headshot.jpg" alt="headshot" class={`${forceOpen ? 'h-36' : 'h-64'} rounded`} />
+  </div>
   <div class="mt-6">
     <h2 class="font-bold text-xl">Bryant Brock</h2>
     <span class="text-gray-500 -mt-1">

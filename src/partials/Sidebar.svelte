@@ -7,7 +7,7 @@
 
 {#if show}
   <div transition:fade>
-    <div on:click={toggleShow} class="absolute w-full h-full bg-black opacity-80 overflow-none fixed" />
+    <div on:click={toggleShow} class="absolute w-full h-full bg-black opacity-80 overflow-none fixed md:hidden" />
     <div
       on:click={toggleShow}
       class={`
@@ -19,7 +19,7 @@
       </svg>
     </div>
   </div>
-  <div transition:fly id="inner">
+  <div transition:fly id="inner" class="md:hidden">
     <slot></slot>
   </div>
 {/if}
