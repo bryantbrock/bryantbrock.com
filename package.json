@@ -1,11 +1,16 @@
 {
-  "name": "svelte-app",
+  "name": "bryantbrock.com",
+  "distribution_id": "E2RLYR0SYK8THY",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public -s",
-    "deploy": "yarn build && aws s3 sync ./public s3://bryantbrock.com"
+    "s3:bucket": "node -p \"require('./package').name\"",
+    "s3:upload": "aws s3 sync ./public s3://bryantbrock.com",
+    "cf:id": "node -p \"require('./package').distribution_id\"",
+    "cf:clear-cache": "aws cloudfront create-invalidation --distribution-id E2RLYR0SYK8THY --paths \"/build/*\"",
+    "deploy": "yarn build && yarn s3:upload && yarn cf:clear-cache"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.2",
