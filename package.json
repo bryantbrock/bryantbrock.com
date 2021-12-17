@@ -9,7 +9,7 @@
     "s3:bucket": "node -p \"require('./package').name\"",
     "s3:upload": "aws s3 sync ./public s3://bryantbrock.com",
     "cf:id": "node -p \"require('./package').distribution_id\"",
-    "cf:clear-cache": "aws cloudfront create-invalidation --distribution-id E2RLYR0SYK8THY --paths \"/build/*\"",
+    "cf:clear-cache": "aws cloudfront create-invalidation --distribution-id E2RLYR0SYK8THY --paths \"/*\"",
     "deploy": "yarn build && yarn s3:upload && yarn cf:clear-cache"
   },
   "devDependencies": {
