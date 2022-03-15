@@ -4,7 +4,8 @@
   export let forceOpen = false;
 
   const skills = [
-    {name: 'React.js', pct: '100'},
+    {name: 'React', pct: '100'},
+    {name: 'React Native', pct: '85'},
     {name: 'Python', pct: '95'},
     {name: 'Node.js / Express.js', pct: '85'},
     {name: 'AWS S3 / EC2 / RDS / Lambda', pct: '80'},

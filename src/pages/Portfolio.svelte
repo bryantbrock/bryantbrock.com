@@ -5,9 +5,8 @@
     title: 'One-off Scripts & APIs',
     path: '/?page=scripts-and-apis',
     body:
-      `My persona favorite, I can build any API or one-off script
-      that gathers data from third-parties, web scraping, and even
-      automating cat uploads from one software to another.
+      `I can build any API or one-off script that gathers
+      data from third-parties, web scraping, and much more.
       Again, if you can dream it, I can build it.`
   };
 
@@ -16,9 +15,7 @@
     path: '/?page=full-stack-apps',
     body:
       `3+ yrs of experience developing startup and large-scale
-      web applications. I know more than a dozen frontend and
-      backend frameworks, and the list keeps growing. If you
-      can dream it, I can build it.`
+      web applications. If you can dream it, I can build it.`
   };
 
   const devOps = {
@@ -26,9 +23,14 @@
     path: '/?page=dev-ops',
     body:
       `Experienced configuring and deploying web applications and
-      APIs to AWS using Terraform, Docker, Serverless Framework,
-      and EC2, S3, and RDS. Other PaaS I deploy to are Heroku,
-      among others.`
+      APIs to AWS.`
+  };
+
+  const mobileApps = {
+    title: 'Mobile Applications',
+    path: '/?page=mobile-apps',
+    body:
+      `Experienced using React Native to build mobile applications.`
   };
 </script>
 
@@ -75,12 +77,11 @@
     </div>
   </div>
   <div class="mt-10">
-    <div class="flex flex-wrap md:flex-nowrap">
-      <Card {...fullStackApps} classes="mr-0 mb-2 md:mr-2" />
-      <Card {...devOps} classes="mb-2" />
-    </div>
-    <div>
+    <div class="grid grid-cols-2 gap-2">
+      <Card {...fullStackApps} />
+      <Card {...devOps} />
       <Card {...scriptsAndApis} />
+      <Card {...mobileApps} />
     </div>
   </div>
   <div class="mt-12">

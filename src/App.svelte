@@ -2,6 +2,7 @@
   import DevOps from 'pages/DevOps.svelte';
   import FullStackApps from 'pages/FullStackApps.svelte';
   import ScriptsAndApis from 'pages/ScriptsAndApis.svelte';
+  import MobileApps from 'pages/MobileApps.svelte';
   import Portfolio from 'pages/Portfolio.svelte';
   import About from 'pages/About.svelte';
   import Footer from 'partials/Footer.svelte';
@@ -13,6 +14,7 @@
     {page: 'dev-ops', Component: DevOps},
     {page: 'full-stack-apps', Component: FullStackApps},
     {page: 'scripts-and-apis', Component: ScriptsAndApis},
+    {page: 'mobile-apps', Component: MobileApps},
   ];
 
   const params = getUrlParams();
@@ -40,6 +42,8 @@
 <svelte:window bind:outerWidth />
 
 <body class={sidebarOpen ? 'fixed md:relative' : ''}>
+
+  <!-- Sidebar toggler icon -->
   <div
     on:click={toggleSidebarOpen}
     class={`
@@ -47,12 +51,13 @@
       ${sidebarOpen ? 'left-8' : 'right-8'} top-8 w-5 h-5
     `}>
     {#if !sidebarOpen}
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+      </svg>
     {/if}
   </div>
 
+  <!-- Sidebar -->
   <Sidebar show={sidebarOpen} toggleShow={toggleSidebarOpen}>
     {#if sidebarOpen}
       <About forceOpen={true} />
