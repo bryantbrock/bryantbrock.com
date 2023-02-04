@@ -50,7 +50,7 @@
     {#each projects as {type, link, title, company, start, end, description}}
       <div class="my-4">
         <div>
-          <a href={link} class="text-blue-800 hover:text-blue-900 underline">
+          <a href={link} class="text-blue-800 hover:text-blue-900 underline" target="_blank">
             <span class="text-xs">[{type}]</span>
             <span>{title}</span>
           </a>

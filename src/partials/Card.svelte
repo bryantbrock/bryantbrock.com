@@ -12,6 +12,6 @@
       rounded bg-gray-800 hover:opacity-80 text-white
       transition py-2 px-3 mt-1 text-sm w-28 text-center self-end
     `}>
-    Learn More
+    Details
   </a>
 </div>

@@ -14,7 +14,7 @@
     title: 'Full Stack Applications',
     path: '/?page=full-stack-apps',
     body:
-      `3+ yrs of experience developing startup and large-scale
+      `4+ yrs of experience developing startup and large-scale
       web applications. If you can dream it, I can build it.`
   };
 
@@ -63,7 +63,7 @@
       <a
         target="_blank"
         rel="noreferrer"
-        href="/assets/2021-resume.pdf"
+        href="/assets/2023-resume.pdf"
         class="py-1 mb-1 px-6 ml-4 border border-black rounded hover:bg-gray-100 transition">
         Resume
       </a>
@@ -97,21 +97,10 @@
       The documentation can teach you everything you need to know; from there, it’s just manual labor.
       <br /><br />
 
-      I stick to two primary languages: <strong>JavaScript</strong> and <strong>Python</strong>.
+      I stick to two primary languages: <strong>JavaScript (TypeScript)</strong> and <strong>Python</strong>.
       These two languages have matured over tha past two decades to accomplish 99% of any
-      software project, whether it be a SaaS application, a REST API, or a one-off Python script.
+      software project, whether it be a SaaS application, a REST API, or a one-off Python/Node script.
       <br /><br />
-
-      Finally, a word about what I don’t do. I am not a website builder. If you need one,
-      find someone who can build you a wordpress site in 25 minutes with pre-made
-      templates (I might be able to point you in the right direction). Or hire a web
-      dev to generate a static site for you. Additionally, I am not a designer. I leave that to the pros.
     </p>
   </div>
 </div>
-
-<style lang="scss">
-  #card {
-
-  }
-</style>

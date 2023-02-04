@@ -4,6 +4,7 @@
   export let forceOpen = false;
 
   const skills = [
+    {name: 'TypeScript', pct: '95'},
     {name: 'React', pct: '100'},
     {name: 'React Native', pct: '85'},
     {name: 'Python', pct: '95'},
@@ -12,7 +13,6 @@
     {name: 'Serverless Framework', pct: '65'},
     {name: 'Heroku', pct: '90'},
     {name: 'Docker', pct: '60'},
-    {name: 'Django / Flask / Werkzeug', pct: '55'},
   ];
 </script>
 
@@ -27,15 +27,15 @@
     </span>
   </div>
   <div class="mt-6">
-    <p>Moscow, ID</p>
+    <p>Birmingham, AL</p>
     <p>(770) 820-8961</p>
-    <p>bryanteebrock@gmail.com</p>
+    <p>bryantbrock@hey.com</p>
   </div>
   <div class="mt-6">
     <h3 class="mb-1 font-bold text-lg">Education & Experience</h3>
     <ul>
       <li>B.A. from New Saint Andrews</li>
-      <li>3+ years of experience</li>
+      <li>4+ years of experience</li>
     </ul>
   </div>
   <div class="mt-8">

@@ -16,30 +16,6 @@
     },
   ];
 
-  const highlights = [
-    {
-      type: 'feature',
-      link: 'https://www.consigncloud.com/smartreq',
-      title: 'Skills Parser',
-      company: 'Emsi Burning Glass',
-      description: `
-        A text area that can parse skills as you type. I was the lead architect for
-        rebuilding and implementing it all across Analyst, the flagship software for Emsi Burning Glass.
-      `
-    },
-    {
-      type: 'feature',
-      link: 'http://help.consigncloud.com/en/articles/4649961-tills-and-z-reports',
-      title: 'Till Management',
-      company: 'ConsignCloud',
-      description: `
-        With the help of Jon Staab, I created a till management and z-report builder for
-        our built-in POS system. Included the creation, selection, and tracking of sales,
-        before generating a report which provided insight into the daily activity of that till (or register).
-      `
-    },
-  ]
-
   const techStackRows = ['Client', 'Middleware', 'Database', 'Deployment'];
   const techStacks = [
     ['React Native', 'Node.js', 'DynamoDB', 'Heroku / Serverless / AWS'],
@@ -77,7 +53,7 @@
     {#each projects as {type, link, title, company, start, end, description}}
       <div class="my-4">
         <div>
-          <a href={link} class="text-blue-800 hover:text-blue-900 underline">
+          <a href={link} class="text-blue-800 hover:text-blue-900 underline" target="_blank">
             <span class="text-xs">[{type}]</span>
             <span>{title}</span>
           </a>

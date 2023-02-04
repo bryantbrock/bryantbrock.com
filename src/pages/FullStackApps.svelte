@@ -2,7 +2,7 @@
   const projects = [
     {
       type: 'product',
-      link: 'https://www.economicmodeling.com/talent-analyst/',
+      link: 'https://lightcast.io/solutions/enterprise-and-staffing/talent-analyst',
       title: 'Analyst - Talent Vertical',
       company: 'Emsi Burning Glass',
       start: 'APRIL 2021',
@@ -83,19 +83,34 @@
     <h1 class="text-3xl font-bold">Full Stack Applications</h1>
     <hr class="my-3 w-full" />
     <p>
-      Full stack applications involve three structures moving in harmony:
-      the web or mobile application, the backend or API, and the database.
+      I've built full-stack web applications for both startup companies and
+      large-scale corporations. In general, full-stack applications have three parts moving in harmony:
+      the web or mobile application, the backend (typically in the form of an API), and the database.
       My expertise lies in architecting the relationship between these structures.
-      I’ve built full-stack web applications for both startup companies and
-      large-scale corporations.
     </p>
   </div>
   <div class="mt-10">
+    <div class="mt-10">
+      <h2 class="tracking-wide text-xl">HIGHLIGHTS</h2>
+      {#each highlights as {type, link, title, company, description}}
+      <div class="my-4">
+        <div>
+          <a href={link} class="text-blue-800 hover:text-blue-900 underline" target="_blank">
+            <span class="text-xs">[{type}]</span>
+            <span>{title}</span>
+          </a>
+          <span> - </span>
+          <span class="italic">{company}</span>
+        </div>
+        <p>{description}</p>
+      </div>
+      {/each}
+    </div>
     <h2 class="tracking-wide text-xl">PROJECTS</h2>
     {#each projects as {type, link, title, company, start, end, description}}
       <div class="my-4">
         <div>
-          <a href={link} class="text-blue-800 hover:text-blue-900 underline">
+          <a href={link} class="text-blue-800 hover:text-blue-900 underline" target="_blank">
             <span class="text-xs">[{type}]</span>
             <span>{title}</span>
           </a>
@@ -103,22 +118,6 @@
           <span class="italic">{company}</span>
         </div>
         <span class="text-gray-600 text-sm">{start} - {end}</span>
-        <p>{description}</p>
-      </div>
-    {/each}
-  </div>
-  <div class="mt-10">
-    <h2 class="tracking-wide text-xl">HIGHLIGHTS</h2>
-    {#each highlights as {type, link, title, company, description}}
-      <div class="my-4">
-        <div>
-          <a href={link} class="text-blue-800 hover:text-blue-900 underline">
-            <span class="text-xs">[{type}]</span>
-            <span>{title}</span>
-          </a>
-          <span> - </span>
-          <span class="italic">{company}</span>
-        </div>
         <p>{description}</p>
       </div>
     {/each}
